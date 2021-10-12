@@ -1,24 +1,64 @@
-# Lumen PHP Framework
-# Versión Lumen (8.2.3) (Laravel Components ^8.0)
-[![Build Status](https://travis-ci.org/laravel/lumen-framework.svg)](https://travis-ci.org/laravel/lumen-framework)
-[![Total Downloads](https://img.shields.io/packagist/dt/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![Latest Stable Version](https://img.shields.io/packagist/v/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
-[![License](https://img.shields.io/packagist/l/laravel/framework)](https://packagist.org/packages/laravel/lumen-framework)
+# ONEI-REST API
+Servicio web de los clasificadores publicos  de la Oficina Nacional de Estadísticas e Información (ONEI) de Cuba  
 
-Laravel Lumen is a stunningly fast PHP micro-framework for building web applications with expressive, elegant syntax. We believe development must be an enjoyable, creative experience to be truly fulfilling. Lumen attempts to take the pain out of development by easing common tasks used in the majority of web projects, such as routing, database abstraction, queueing, and caching.
+## Comenzando 🚀
 
-## Official Documentation
+```bash
+$ https://github.com/carlosgg21/onei-api.git
+```
+```
+$ cd onei-rest
+$ composer install
+```
 
-Documentation for the framework can be found on the [Lumen website](https://lumen.laravel.com/docs).
 
-## Contributing
+## Funciones actuales 
 
-Thank you for considering contributing to Lumen! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- Listado de las provincias
+- Provincia por código			
+- Listado de los municipios
+- Municipio por código
+- Municipios por código de provincia			
+- Listado de las formas organizativas
+- Forma organizativa por por código
+- Listado de paises
+- País por código
+- Paises por código de la región
+- Listado de uniones 
+- Listado de uniones activas
+- Unión por código
+- Listado de organismos
+- Listado de organismos activos
+- Organismos por código
+- Listado de instituciones 
+- Institución por código
 
-## Security Vulnerabilities
+## Próximas funciones
 
-If you discover a security vulnerability within Lumen, please send an e-mail to Taylor Otwell at taylor@laravel.com. All security vulnerabilities will be promptly addressed.
+- Documentación de la API con Swagger
+- Seguridad con API Token
 
-## License
+## API Routes
+| HTTP Method	| Path | Action  | Desciption  |
+| ----- | ----- | ----- | ---- |------------- |
+| GET      | /api/v1/provinces | index |  Get all provinces
+| GET      | /api/v1/provinces/{code}| show |  Get specific province
+| GET      | /api/v1/townships | index |  Get all townships
+| GET      | /api/v1/townships/{code}| show |  Get specific townships
+| GET      | /api/v1/townships/province/{provinceID}| township | Get All the townships that belong to the province 
+| GET      | /api/v1/forms | index |  Get all organizational forms 
+| GET      | /api/v1/forms/{code}| show |  Get specific organizational form
+| GET      | /api/v1/countries | index |  Get all countries
+| GET      | /api/v1/countries/{code}| show |  Get specific country
+| GET      | /api/v1/countries/region/{regionId}| countries | Get All the countries that belong to the region 
+| GET      | /api/v1/unions | index |  Get all unions
+| GET      | /api/v1/unions/active| active |  Get all the active uniones
+| GET      | /api/v1/unions/{code}| show |  Get specific union
+| GET      | /api/v1/organisms | index |  Get all organisms
+| GET      | /api/v1/organisms/active| active |  Get all the active organisms
+| GET      | /api/v1/organisms/{code}| show |  Get specific organism
+| GET      | /api/v1/institutions | index |  Get all institutions
+| GET      | /api/v1/institutions/{code}| show |  Get specific institution
 
-The Lumen framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Tecnología utilizada en el proyecto. 
+ Lumen (8.2.3) (Laravel Components ^8.0)
