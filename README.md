@@ -6,7 +6,7 @@ Servicio web de los clasificadores publicos  de la Oficina Nacional de Estadíst
 
 ### Pre-requisitos 
 
-- Componer
+- Composer https://getcomposer.org/
 - PHP 7.4+
 
 ### Instalación
