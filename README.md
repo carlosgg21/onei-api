@@ -8,7 +8,7 @@ Servicio web de los clasificadores publicos  de la Oficina Nacional de Estadíst
 
 - Composer https://getcomposer.org/
 - PHP 7.4+
-- Habilitar en el php.ini las extensiones para trabjar con sqlite
+- Habilitar en el php.ini las extensiones para trabajar con sqlite
 
 ### Instalación
 
