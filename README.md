@@ -3,8 +3,16 @@ Servicio web de los clasificadores publicos  de la Oficina Nacional de Estadíst
 
 ## Comenzando 🚀
 
+
+### Pre-requisitos 
+
+- Componer
+- PHP 7.4+
+
+### Instalación
+
 ```bash
-$ https://github.com/carlosgg21/onei-api.git
+$ git clone https://github.com/carlosgg21/onei-api.git
 ```
 ```
 $ cd onei-rest
