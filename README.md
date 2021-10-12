@@ -52,7 +52,7 @@ $ composer install
 | GET      | /api/v1/provinces | index |  Get all provinces
 | GET      | /api/v1/provinces/{code}| show |  Get specific province
 | GET      | /api/v1/townships | index |  Get all townships
-| GET      | /api/v1/townships/{code}| show |  Get specific townships
+| GET      | /api/v1/townships/{code}| show |  Get specific township
 | GET      | /api/v1/townships/province/{provinceID}| township | Get All the townships that belong to the province 
 | GET      | /api/v1/forms | index |  Get all organizational forms 
 | GET      | /api/v1/forms/{code}| show |  Get specific organizational form
@@ -60,7 +60,7 @@ $ composer install
 | GET      | /api/v1/countries/{code}| show |  Get specific country
 | GET      | /api/v1/countries/region/{regionId}| countries | Get All the countries that belong to the region 
 | GET      | /api/v1/unions | index |  Get all unions
-| GET      | /api/v1/unions/active| active |  Get all the active uniones
+| GET      | /api/v1/unions/active| active |  Get all the active unions
 | GET      | /api/v1/unions/{code}| show |  Get specific union
 | GET      | /api/v1/organisms | index |  Get all organisms
 | GET      | /api/v1/organisms/active| active |  Get all the active organisms
