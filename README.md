@@ -40,7 +40,7 @@ $ composer install
 
 ## API Routes
 | HTTP Method	| Path | Action  | Desciption  |
-| ----- | ----- | ----- | ---- |------------- |
+| ----- | ----- | ----- |------------- |
 | GET      | /api/v1/provinces | index |  Get all provinces
 | GET      | /api/v1/provinces/{code}| show |  Get specific province
 | GET      | /api/v1/townships | index |  Get all townships
