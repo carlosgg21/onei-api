@@ -8,7 +8,7 @@ class CountryResource extends JsonResource
 {
     public function toArray($request)
     {
-        //      'Cod_Region', 'Nombre_Region','Pais_o_Area','Codigo_M49','Codigo_ISO_alpha3'
+
         return [
             'codigo'        => $this->Codigo_M49,
             'nombre_pais'   => $this->Pais_o_Area,
