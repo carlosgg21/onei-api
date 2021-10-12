@@ -12,7 +12,11 @@ class CountryController extends Controller
 {
     public function index()
     {
-        return new CountryCollection(Country::paginate(10));
+
+        $data = CountryResource::collection(Country::paginate(10))->response()->getData(true);
+        $data['status'] = "success";
+        return response()->json($data,200);
+        //return new CountryCollection(Country::paginate(10));
     }
 
     public function show($code)
