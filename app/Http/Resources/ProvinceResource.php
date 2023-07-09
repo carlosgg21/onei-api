@@ -17,7 +17,8 @@ class ProvinceResource extends JsonResource
         return [
             'codigo'    => $this->id,
             'provincia' => $this->name,
-            'siglas'    => $this->acronym
+            'siglas'    => $this->acronym,
+            'color'     => $this->color
         ];
     }
     public function with($request)

@@ -12,9 +12,14 @@ class InstitutionResource extends JsonResource
             'codigo'     => $this->COD,
             'nombre'     => $this->DESCC,
             'siglas'     => $this->SIGLAS,
+            'direccion'     => $this->DIRECC,
             'codgio_dpa' => $this->DPA,
             'codigo_nae' => $this->NAE,
+            'descripcion_cn' => $this->DESCN,
+            'codigo_cnae' => $this->DESCN,
+            'actividad' => $this->DESCRIP,
             'codigo_forg'=> $this->FORG,
+            'codigo_desfo'=> $this->DESFO,
 
 
         ];

@@ -19,4 +19,9 @@ class ProvinceController extends Controller
     {
         return new ProvinceResource(Province::findOrFail($code));
     }
+    public function search($search)
+    {
+        return new ProvinceCollection(Province::where('name', 'LIKE', '%' . $search . '%')->get());
+        // return Province::where('name', 'LIKE', '%' . $search . '%')->get();
+    }
 }

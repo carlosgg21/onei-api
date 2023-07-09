@@ -18,7 +18,7 @@ class OrganizationFormResource extends JsonResource
     {
         return [
             'status' => "success",
-            'fecha_actualizacion' => "Abril 2020"
+            'fecha_actualizacion' => "Mayo 2023"
         ];
     }
 }

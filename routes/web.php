@@ -17,7 +17,7 @@ $router->get('/', function () use ($router) {
     return $router->app->version();
 });
 $router->get('/info' , function() use($router){
-    return "version de la informacion abril 2021";
+    return "version de la informacion mayo 2023";
 });
 
 $router->group(
@@ -29,6 +29,7 @@ $router->group(
             //provincias
             $router->get('provinces','ProvinceController@index');
             $router->get('provinces/{code}','ProvinceController@show');
+            $router->get('provinces/search/{search}', 'ProvinceController@search');
             //municipios
             $router->get('townships','TownshipController@index');
             $router->get('townships/{code}','TownshipController@show');
@@ -51,6 +52,7 @@ $router->group(
             //instituciones
             $router->get('institutions', 'InstitutionController@index');
             $router->get('institutions/{code}', 'InstitutionController@show');
+        //    $router->get('institutions/search', 'InstitutionController@search');
 
         }
 );
