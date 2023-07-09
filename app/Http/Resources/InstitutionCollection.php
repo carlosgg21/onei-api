@@ -17,7 +17,7 @@ class InstitutionCollection extends ResourceCollection
     {
         return [
             'status' => "success",
-            'fecha_actualizacion' => "Diciembre 2022"
+            'fecha_actualizacion' => "Mayo 2023"
         ];
     }
 }

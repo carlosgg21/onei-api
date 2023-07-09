@@ -11,7 +11,8 @@ class InstitutionController extends Controller
 {
     public function index()
     {
-        return new InstitutionCollection(Institution::paginate(10));
+        // return new InstitutionCollection(Institution::paginate(10));
+        return new InstitutionCollection(Institution::all());
     }
 
     public function show($code)

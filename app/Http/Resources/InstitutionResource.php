@@ -9,17 +9,18 @@ class InstitutionResource extends JsonResource
     public function toArray($request)
     {
         return [
-            'codigo'     => $this->COD,
-            'nombre'     => $this->DESCC,
+            'codigo'     => $this->CODIGO,
+            'nombre'     => $this->DESC,
             'siglas'     => $this->SIGLAS,
-            'direccion'     => $this->DIRECC,
+            'direccion'     => $this->DIREC,
             'codgio_dpa' => $this->DPA,
             'codigo_nae' => $this->NAE,
-            'descripcion_cn' => $this->DESCN,
-            'codigo_cnae' => $this->DESCN,
+            'descripcion_nae' => $this->DESCNAE,
+            'descripcion_cnae' => $this->DESCCNAE,
+            'codigo_cnae' => $this->CNAE,
             'actividad' => $this->DESCRIP,
             'codigo_forg'=> $this->FORG,
-            'codigo_desfo'=> $this->DESFO,
+            'codigo_subordinacion'=> $this->DESFO,
 
 
         ];
@@ -28,7 +29,7 @@ class InstitutionResource extends JsonResource
     {
         return [
             'status' => "success",
-            'fecha_actualizacion' => "Agosto 2021"
+            'fecha_actualizacion' => "Mayo 2023"
         ];
     }
 }
